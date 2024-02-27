@@ -1,0 +1,206 @@
+/*geral*/
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #333;
+}
+
+body{
+  background-image: url(/imagem/bg.jpg);
+  background-size: cover;
+  background-position: center;
+
+}
+
+
+html {
+  height: 100vh;
+}
+
+button{
+  background-color: #fdfdfdfd;
+  color: #102F5e;
+  border: 2px solid #102F5e;
+  padding: 0.3rem 0.6rem;
+  font-size: 1rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s
+}
+
+
+button:hover{
+  background-color: #102F5e;
+  color: #fff;
+}
+
+button:hover > i{
+  color: #fff;
+}
+
+button i {
+  color: #102F5e;
+  font-weight: bold;
+  pointer-events: none;
+}
+
+
+
+
+
+
+input,select{
+  padding: 0.25rem 0.5rem;
+}
+
+.hide{
+  display: none;
+  transition: .5s;
+}
+
+/* List header */
+
+.container-main{
+  margin: 3rem auto;
+  max-width: 450px;
+  height: auto;
+  background-color: #fdfdfdfd;
+  padding: 1.5rem;
+  border-radius: 15px;
+}
+
+
+.container-main header{
+  text-align: center;
+  padding: 0 1rem 1rem;
+  border-bottom: 1px solid #ccc ;
+}
+
+
+#list-form, #edit-form{
+
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+#list-form p, 
+#edit-form p{
+  margin-bottom: .5rem;
+  font-weight: bold;
+}
+
+
+.form-control{
+  display: flex;
+
+}
+
+
+.form-control input {
+  margin-right: 0.3125rem;
+}
+
+#cancel-btn{
+  margin-top: 1rem;
+}
+
+
+/*toobal */
+
+#toolbar{
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+}
+
+
+#toolbar h4{
+  margin-bottom: 5px;
+}
+
+#search-form{
+
+  display: flex;
+
+}
+
+#search-form {
+  margin-right: 15px;
+
+}
+
+
+#search{
+  border-right: 1px solid #ccc ;
+  margin-right: 1rem;
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+#search input{
+  width: 100%;
+  margin-right: 0.3rem;
+}
+
+
+#filter{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+
+#filter select {
+  flex: 1;
+}
+
+
+.list{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #ddd;
+  transition: .3s;
+}
+
+
+.list h3{
+  flex: 1;
+  font-size: .9rem;
+}
+
+.list button{
+  margin-left: .5rem;
+}
+
+
+.done{
+  background-color: #395169;
+  
+}
+
+
+.done h3{
+  color: #fff;
+  text-decoration: line-through;
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+
+
+
+  .container-main{
+
+    max-width: 320px;
+   
+  }
+  
+
+}
